@@ -597,7 +597,7 @@ col_rec1, col_rec2 = st.columns([2, 1])
 
 with col_rec1:
     st.info(f"📍 Currently uploading for: **{cell_type}** cell")
-    st.markdown("Upload a `.wav`` file containing **several hits**.")
+    st.markdown("Upload a `.wav` '.m4a' , .mp4 format file containing **several hits**.")
     uploaded_file = st.file_uploader(
         f"Upload audio file for {cell_type} cell",
         type=["wav", "mp3", "m4a", "flac", "ogg"],
