@@ -18,7 +18,7 @@ except ImportError:
     HAS_SPAFE = False
 
 # --- Page Config ---
-st.set_page_config(layout="wide", page_title="Percussion Health AI - Pro")
+st.set_page_config(layout="wide", page_title="Signal Processing Analysis for Percussion Signal")
 
 # --- Custom CSS (Glassmorphism UI) ---
 st.markdown("""
@@ -134,7 +134,7 @@ def _plot_mfcc(fig, ax, y, sr, title):
 # MAIN APP
 # =========================================================
 
-st.markdown('<div class="main-header"><div class="main-title">🎯 Percussion Health AI</div><div class="main-subtitle">Multi-Hit Selection & Detailed Signal Diagnostics</div></div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"><div class="main-title"> Automation of Signal Processing Analysis for Percussion Signal</div><div class="main-subtitle">Multi-Hit Selection & Detailed Signal Diagnostics</div></div>', unsafe_allow_html=True)
 
 with st.sidebar:
     st.header("⚙️ Settings")
@@ -246,3 +246,16 @@ if any(st.session_state.multi_recordings.values()):
                     _plot_mfcc(fig, axL, r1['signal'], r1['sr'], r1['label'])
                     _plot_mfcc(fig, axR, r2['signal'], r2['sr'], r2['label'])
                 st.pyplot(fig); plt.close()
+
+
+
+# --- Footer Copyright ---
+st.markdown(
+    """
+    <hr style="margin-top:50px;">
+    <div style='text-align:center; color:gray; font-size:14px;'>
+        © 2026 Amrit Tiwari | Automation of Signal Processing Analysis for Percussion Signal | University of Houston
+    </div>
+    """,
+    unsafe_allow_html=True
+)
