@@ -60,7 +60,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="main-header"><div class="main-title">🎯 Percussion Health Analysis - Advanced</div><div class="main-subtitle">Multi-Hit Recording & Selection System</div></div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"><div class="main-title">🎯 Percussion Health Analysis </div><div class="main-subtitle">Multi-Hit Recording & Selection System</div></div>', unsafe_allow_html=True)
 
 # ----------------------------- 
 # Session State Initialization
@@ -597,7 +597,7 @@ col_rec1, col_rec2 = st.columns([2, 1])
 
 with col_rec1:
     st.info(f"📍 Currently uploading for: **{cell_type}** cell")
-    st.markdown("Upload a `.wav` '.m4a' , .mp4 format file containing **several hits**.")
+    st.markdown("Upload a `.wav`,`.mp4`,`.mp3`,`etc` file containing **several hits**.")
     uploaded_file = st.file_uploader(
         f"Upload audio file for {cell_type} cell",
         type=["wav", "mp3", "m4a", "flac", "ogg"],
