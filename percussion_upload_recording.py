@@ -139,7 +139,7 @@ st.markdown('<div class="main-header"><div class="main-title"> Automation of Sig
 with st.sidebar:
     st.header("⚙️ Settings")
     cell_mode = st.radio("Recording Category:", ["Healthy", "Unhealthy"])
-    peak_thr = st.slider("Trigger Sensitivity", 0.01, 0.5, 0.08)
+    peak_thr = st.slider("Trigger Sensitivity", 0.01, 0.5, 0.2)
     hit_win = st.slider("Hit Window (s)", 0.1, 1.0, 0.2) # Default 0.2
     st.divider()
     if st.button("🗑️ Reset Session"):
