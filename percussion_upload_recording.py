@@ -148,7 +148,7 @@ with st.sidebar:
 
 # --- Step 1: Upload ---
 st.header(f"Step 1: Process {cell_mode} File")
-up_file = st.file_uploader("Upload Audio (Multiple Hits)", type=["wav", "mp3", "m4a"])
+up_file = st.file_uploader("Upload Audio (Multiple Hits)", type=["wav", "mp3", "m4a","mp4"])
 
 if up_file and st.button("🔍 Scan Hits", type="primary"):
     y, sr = load_audio_any_format(up_file.read())
